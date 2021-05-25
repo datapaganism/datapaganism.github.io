@@ -14,16 +14,16 @@
         <header>
             <h1>{{ page.header }}</h1>
             <p>{{ page.description }}</p>
-
-            {% include navigation.html %}
         </header>
+
+        {% include navigation.html %}
 
         <main>
             {{ content }}
         </main>
 
-        <footer>
-            {% include footer.html %}
-        </footer>
+        
+        {% include footer.html %}
+
     </body>
 </html>
