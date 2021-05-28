@@ -1,7 +1,7 @@
 ---
 layout: default
 title: afk - blog
-header: blogs and logs but no flogs
+header: blogs, articles, projects
 description: a collection of attempts of attempting to make stuff
 permalink: /blog/
 ---

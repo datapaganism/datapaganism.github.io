@@ -10,6 +10,9 @@ locale: en_GB
 url: "https://datapaganism.github.io"
 baseurl: ""
 
+urlName: "datapaganism"
+urlSuffix : ".github.io"
+
 
 # OPTIONAL: override baseurl and url if using a custom domain
 # Note: leave out the trailing / from this value. 

@@ -1,11 +1,13 @@
-- name: Home
-  link: /
+# - name: Home
+#   link: /
+
+- name: About Me
+  link: /about
+
 
 - name: Blog
   link: /blog
 
-- name: About
-  link: /about
 
 - name: Contact
   link: /contact

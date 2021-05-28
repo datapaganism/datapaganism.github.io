@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="url1parent">
+            <div class="box1"></div>
+            <div class="box2"></div>
+            <a class="url" href="{{ site.url | relative_url }}">datapaganism</a>
+        </div>
+        <div class="url2parent">
+            <div class="box1"></div>
+            <div class="box2"></div>
+            <a class="url" href="{{ site.url | relative_url }}">.com</a>
+        </div>
+
+        <nav>
+            <a class="nav__link" href="{{ item.link | relative_url }}">about me</a>
+            <a class="nav__link" href="{{ item.link | relative_url }}">contact</a>
+            <a class="nav__link" href="{{ item.link | relative_url }}">blogs</a>
+        </nav>
+    </header>
+
+
+
+   
+
+
+
+    <div class="pageTitle">
+        <div class="pageTitle__box1"></div>
+        <div class="pageTitle__box2"></div>
+        <div class="pageTitle__text">Designing and making a better numpad</div>
+        <div class="pageTitle__subheading">
+            <div class="pageTitle__author">Alen Karnil</div>
+            <div class="pageTitle__date">01/01/1970</div> 
+        </div>
+    </div>
+
+    <main class="data">
+        <div class="data__text">
+            <h1>{{ page.header }}</h1>
+            <p>{{ page.description }}</p>
+            {{ content }}
+        </div>
+
+        
+
+        <div class="data__blogs">
+            {% for post in site.posts %}
+                <p><a href="{{ post.url }}">{{ post.title }}</a><br>
+                {{ post.description }}<br>
+                📅 {{ post.date | date_to_string }}</p>
+            {% endfor %}
+        </div>
+    </main>
+
+    
+    {% include footer.html %}
+
+<!-- <div class="superparent">
+    <div class="parent1">
+        <div class="child1"></div>
+        <div class="child2"></div>
+        <a class="child3" href="{{ site.url | relative_url }}">datapaganism</a>
+    </div>
+
+    <div class="parent2">
+        <div class="child1"></div>
+        <div class="child2"></div>
+        <a class="child3" href="{{ site.url | relative_url }}">.com</a>
+    </div>
+</div> -->
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

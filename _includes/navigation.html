@@ -1,5 +1,5 @@
 <nav>
     {% for item in site.data.navigation %}
-        <a class="nav{{forloop.index}} button" href="{{ item.link | relative_url }}">{{ item.name }}</a>
+        <a class="nav__link" href="{{ item.link | relative_url }}">{{ item.name }}</a>
     {% endfor %}
 </nav>

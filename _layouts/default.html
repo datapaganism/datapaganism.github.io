@@ -12,16 +12,38 @@
     </head>
     <body>
         <header>
-            <h1>{{ page.header }}</h1>
-            <p>{{ page.description }}</p>
+            <div class="url1parent">
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <a class="url" href="{{ site.url | relative_url }}">{{site.urlName}}</a>
+            </div>
+            <div class="url2parent">
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <a class="url" href="{{ site.url | relative_url }}">{{site.urlSuffix}}</a>
+            </div>
+    
+            {% include navigation.html %}
         </header>
+        
+        <div class="pageTitle">
+            <div class="pageTitle__box1"></div>
+            <div class="pageTitle__box2"></div>
+            <div class="pageTitle__text">{{ page.header }}</div>
+            <div class="pageTitle__subheading">
+                <div class="pageTitle__author">{{page.author}}</div>
+                <div class="pageTitle__date">{{ page.date | date_to_long_string }}</div> 
+            </div>
+        </div>
 
-        {% include navigation.html %}
-
-        <main>
+        <content>
+            <div class="content__description">
+                <p>{{ page.description }}</p>
+            </div>
             {{ content }}
-        </main>
-
+        </content>
+    
+            
         
         {% include footer.html %}
 

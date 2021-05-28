@@ -41,7 +41,6 @@ nav
         display: grid;
         justify-content: center;
         align-content: center;
-        text-transform: lowercase;
     }
 
 
@@ -138,13 +137,6 @@ header {
         /* padding-bottom: 1.5em; */
     }
 
-content
-{
-    background-color: #333735 ;
-}
 
-footer
-{
-    background-color: #E5E1D5 ;
-}
+
 
