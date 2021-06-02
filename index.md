@@ -8,4 +8,4 @@ layout: default
 
 # Welcome to here
 
-you have landed in a strange place, this page which is the index of a website that I will one day finish
+Welcome to my website, it is unfinished

@@ -21,3 +21,11 @@ urlSuffix : ".github.io"
 #RSS feeds
 feed:
   posts_limit: 20
+
+
+#sass
+sass:
+  load_paths:
+    - _sass
+    - node_modules
+  style: compressed
