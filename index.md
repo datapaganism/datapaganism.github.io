@@ -1,7 +1,7 @@
 ---
 title: afk - home
-header: The eagle (you) has landed
-description: a website, my website
+header: UNDER CONSTRUCTION
+description: UNDER CONSTRUCTION
 permalink: /
 layout: default
 ---
