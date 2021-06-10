@@ -6,4 +6,6 @@ permalink: /contact/
 layout: default
 ---
 
+EVERYTHING IS UNDER CONSTRUCTION
+
 i will add these later

@@ -6,6 +6,8 @@ description: a collection of attempts of attempting to make stuff
 permalink: /blog/
 ---
 
+EVERYTHING IS UNDER CONSTRUCTION
+
 {% for post in site.posts %}
   <p><a href="{{ post.url }}">{{ post.title }}</a><br>
   {{ post.description }}<br>
