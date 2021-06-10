@@ -19,7 +19,7 @@ My biggest problem with the Preonic design is that you need to hit key combos fo
 
 So I decided to look into what already exists on the market for alternatives.
 
-The [UHK / Ultimate Hacking Keyboard] (https://ultimatehackingkeyboard.com/), is a very nice keyboard, it's split, normal-ish layout and looks cool. You don't even notice the fact that one side is bigger than the other.
+The [UHK / Ultimate Hacking Keyboard](https://ultimatehackingkeyboard.com/), is a very nice keyboard, it's split, normal-ish layout and looks cool. You don't even notice the fact that one side is bigger than the other.
 
 But there are 2 things I don't like,
 * No function keys | function keys are cool, not just for quick saving and ALT-F4, have their uses in debugging as well.
