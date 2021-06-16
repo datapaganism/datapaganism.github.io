@@ -7,4 +7,5 @@ layout: post
 author: datapagan
 ---
 
-I have suffered to relatively link this thing together, following a jekyll tutorial and then making a github pages site out of that tutorial is not very clever.
+Welcome to my website, or to the launch of it, its under construction as I am trying to build up the CSS for this page, things will constantly change.
+This is the first post

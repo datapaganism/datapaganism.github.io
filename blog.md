@@ -1,6 +1,6 @@
 ---
 layout: default
-title: afk - blog
+title: blogs | afk
 header: blogs, articles, projects
 description: a collection of attempts of attempting to make stuff
 permalink: /blog/
