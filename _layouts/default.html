@@ -7,12 +7,11 @@
         <title>{{ page.title }}</title>
         <meta name="description" content="{{ page.description }}" />
         {% feed_meta %}
-        <!-- <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css"> -->
-        <link rel="stylesheet" href="{{ "assets/css/custom.css" | relative_url }}">
         <link rel="stylesheet" href="{{ "assets/css/main.css" | relative_url }}">
+        <!-- <link rel="stylesheet" href="{{ "assets/css/main.css" | relative_url }}"> -->
     </head>
     <body>
-        <header>
+        <!-- <header>
             <div class="url1parent">
                 <div class="box1"></div>
                 <div class="box2"></div>
@@ -25,28 +24,38 @@
             </div>
     
             {% include navigation.html %}
+        </header> -->
+
+        <header class="navbar">
+            <a class="navbar__homeLink url" href="{{ site.url | relative_url }}"><div class ="navbar__homeLink__text">{{site.urlName}}</div></a>
+            {% include navigation.html %}
         </header>
         
-        <div class="pageTitle">
-            <div class="pageTitle__box1"></div>
-            <div class="pageTitle__box2"></div>
-            <div class="pageTitle__text">{{ page.header }}</div>
-            <div class="pageTitle__subheading">
-                <div class="pageTitle__author">{{page.author}}</div>
-                <div class="pageTitle__date">{{ page.date | date_to_long_string }}</div> 
-            </div>
-        </div>
+        <div class="content__container">
+            <content>
+                <div class="pageTitle">
+                    <div class="pageTitle__box1"></div>
+                    <div class="pageTitle__box2"></div>
+                    <div class="pageTitle__text">{{ page.header }}</div>
+                    <div class="pageTitle__subheading">
+                        <div class="pageTitle__author">{{page.author}}</div>
+                        <div class="pageTitle__date">{{ page.date | date_to_long_string }}</div> 
+                    </div>
+                </div>
+                
+                
+                <div class="content__article">
+                    <div class="content__description">
+                        <p>{{ page.description }}</p>
+                    </div>
+                    {{ content }}
+                </div>
+                    
+            </content>
 
-        <content>
-            <div class="content__description">
-                <p>{{ page.description }}</p>
-            </div>
-            {{ content }}
-        </content>
-    
-            
+            {% include footer.html %}
+        </div>            
         
-        {% include footer.html %}
-
+        
     </body>
 </html>

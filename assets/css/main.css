@@ -1,0 +1,252 @@
+:root
+{
+    --padding : 3vw;
+    --border-radius: 3vw;
+}
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body
+{
+    background-color: #F9860F;
+    background: rgb(255,162,65);
+    background: linear-gradient(326deg, rgba(255,162,65,1) 0%, rgba(186,102,14,1) 67%, rgba(249,134,15,1) 100%); 
+    animation: navBarBody 8s ease infinite;
+
+
+    color: #634705;
+    font-family: Arial, Helvetica, sans-serif;
+    margin : 0;
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 75px auto;
+    
+}
+
+
+    @keyframes navBarBody {
+        0%{background-position:0% 72%}
+        50%{background-position:100% 29%}
+        100%{background-position:0% 72%}
+    }
+
+
+
+
+
+
+.navbar {
+    display: grid;
+    grid-template-columns: calc(var(--padding) + var(--border-radius)) auto calc(var(--padding) + var(--border-radius));
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    /* background-color:#F9860F; */
+    }
+
+    .navbar__homeLink { grid-area: 1 / 2 / 2 / 3; }
+    nav { grid-area: 2 / 2 / 2 / 3; }
+
+
+
+    .navbar__homeLink__text:hover, nav .nav__link{
+        color: #fff;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    nav .nav__link
+    {
+        font-size: 18px;
+        font-weight: normal;
+        text-align: center;
+        color: #fff;
+        text-decoration: none;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        text-transform: lowercase;
+    }
+
+    nav .nav__link:hover
+        {
+            color: #6F3C09;
+        }
+
+    .navbar__homeLink
+    {
+        display: grid;
+        justify-content: center; /* change this */
+        align-content: center;
+        font-size: 32px;
+        font-weight: normal;
+        text-align: center;
+        color: #6F3C09;
+        text-decoration: none;
+    }
+
+
+
+
+.content__container {
+    display: grid;
+    grid-template-columns: var(--padding) auto auto var(--padding);
+    grid-template-rows: 1fr 50px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    background-color: white;
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+    }
+    
+    content { 
+        grid-area: 1 / 2 / 2 / 4;
+        display: grid;
+        grid-auto-rows: auto 1fr 10fr;
+    }
+
+    footer
+    {
+        grid-area: 2 / 2 / 2 / 4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content__article, .content__description, footer,.pageTitle__box2, .pageTitle__subheading, .pageTitle__box2, .pageTitle__subheading
+    {
+        background-color: #FAAD00 ;
+    }
+
+
+
+
+
+.pageTitle {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr auto;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .pageTitle__box1 {
+        grid-area: 1 / 1 / 2 / 2;
+        padding-top: var(--padding);
+    }
+    .pageTitle__box2{ 
+        grid-area: 2 / 1 / 3 / 2;
+        border-radius: var(--border-radius) var(--border-radius) 0 0;
+    }
+    .pageTitle__text { grid-area: 1 / 1 / 3 / 2; }
+    .pageTitle__subheading { grid-area: 3 / 1 / 4 / 2; } 
+
+
+    /* .pageTitle__box1 { background-color: #fff; } */
+
+
+    .pageTitle__text
+    {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        font-size: 6vw;
+        font-weight: normal;
+        text-align: center;
+        color: #634705;
+        text-decoration: none;
+        /* white-space: nowrap; */
+    }
+
+    .pageTitle__subheading
+    {
+        align-self: end;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 100%;
+    }
+
+    .pageTitle__date
+    {
+        align-self: end;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: right;
+        padding-right: 0.5em;
+        /* padding-bottom: 1.5em; */
+    }
+    .pageTitle__author
+    {
+        align-self: end;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: left;
+        padding-left: 0.5em;
+        /* padding-bottom: 1.5em; */
+    }
+
+ /* Medium devices (landscape tablets, 768px and up)    this one */
+@media only screen and (min-width: 768px) {
+
+    :root
+    {
+        --padding : 6vw;
+        --border-radius: 3vw;
+    }
+
+    .navbar {
+        grid-template-columns: calc(var(--padding) + var(--border-radius)) auto 300px calc(var(--padding) + var(--border-radius));
+        grid-template-rows: 1fr;
+    }
+
+        nav { grid-area: 1 / 3 / 2 / 4; }
+
+        .navbar__homeLink
+        {
+            justify-content: left; /* change this */
+            font-size: 64px;
+            grid-area: 1 / 2 / 2 / 3;
+        }
+
+        body
+        {
+            grid-template-rows: 110px auto;
+        }
+
+        nav .nav__link
+        {
+            font-size: 24px;
+        }
+
+        
+    
+    .content__container {
+
+        grid-template-columns: var(--padding) auto auto var(--padding);
+        }
+
+        .pageTitle__box1 {
+            grid-area: 1 / 1 / 2 / 2;
+            padding-top: var(--padding);
+        }
+
+
+    .pageTitle__text
+    {
+        font-size: 3.5vw;
+    }
+}
+
+
