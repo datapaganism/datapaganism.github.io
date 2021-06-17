@@ -8,7 +8,7 @@
     --navbar : #353535;
     --moat : #121212;
     --contentCard : #242424;
-    --red : rgba(185, 29, 57, 1);
+    --red : rgba(232, 1, 44, 1);
 
     --blackest : #121212;
     --_00dp : rgba(255,255,255,0);
@@ -29,7 +29,7 @@ body
 {
     /* background-color: #F9860F;
     background-color: var(--navbar); */
-    --colour : rgba(29, 185, 157, 0.15);
+    --colour : rgba(1, 178, 165, 0.15);
     background-image: linear-gradient(0deg, var(--colour), var(--colour));
     background-blend-mode: initial;
     background-color: var(--blackest);
@@ -39,7 +39,7 @@ body
     animation: navBarBody 8s ease infinite; */
 
 
-    color: rgba(29, 185, 157, 1);
+    color: rgba(1, 178, 165, 1);
     font-family: Arial, Helvetica, sans-serif;
     margin : 0;
     height: 100vh;
@@ -84,6 +84,8 @@ body
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding-left: 75px;
+        padding-right: 75px;
     }
     
     nav .nav__link
@@ -112,7 +114,7 @@ body
         font-size: 32px;
         font-weight: normal;
         text-align: center;
-        color: rgba(29, 185, 157, 1);
+        color: rgba(1, 178, 165, 1);
         text-decoration: none;
     }
 
@@ -251,7 +253,10 @@ body
         grid-template-rows: 1fr;
     }
 
-        nav { grid-area: 1 / 3 / 2 / 4; }
+        nav {
+            grid-area: 1 / 3 / 2 / 4;
+            padding: 0;
+        }
 
         .navbar__homeLink
         {
