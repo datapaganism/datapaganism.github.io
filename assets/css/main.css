@@ -8,8 +8,11 @@
     /* --navbar : #353535; */
     --moat : #121212;
     --contentCard : #242424;
-    --title  : 223, 27, 18;
-    --navbar : 255, 198, 0;
+    --title  : 223, 27, 18; /* red */
+    --navbar : 255, 198, 0; /* yellow */
+    --text   : 255, 198, 0; /* white */
+    --blue   : 8, 156, 138; /* blue */
+    --white  : 255, 255, 255; /* white */
 
     --blackest : #121212;
     --_00dp : rgba(255,255,255,0);
@@ -40,7 +43,7 @@ body
     animation: navBarBody 8s ease infinite; */
 
 
-    color: rgba(var(--navbar), 1);
+    /* color: rgba(var(--navbar), 1); */
     font-family: Arial, Helvetica, sans-serif;
     margin : 0;
     height: 100vh;
@@ -148,6 +151,7 @@ body
 
     footer
     {
+        color: rgb(var(--blue));
         grid-area: 2 / 2 / 2 / 4;
         display: flex;
         justify-content: center;
@@ -167,8 +171,20 @@ body
 
     .content__article
     {
+        color:rgba(var(--white), 1);
         padding-left: var(--text-padding);
         padding-right: var(--text-padding);
+    }
+
+    code
+    {
+        color: rgba(var(--navbar), 1);
+    }
+
+    .content__article a
+    {
+        color: rgb(var(--blue));
+        text-decoration: none;
     }
 
 
@@ -206,7 +222,7 @@ body
         font-size: 6vw;
         font-weight: normal;
         text-align: center;
-        color: #634705;
+        /* color: #634705; */
         color: rgba(var(--title),1);
         text-decoration: none;
         /* white-space: nowrap; */
@@ -237,6 +253,11 @@ body
         text-align: left;
         padding-left: var(--text-padding);
         /* padding-bottom: 1.5em; */
+    }
+
+    .pageTitle__date, .pageTitle__author
+    {
+        color: rgb(var(--title));
     }
 
  /* Medium devices (landscape tablets, 768px and up)    this one */
