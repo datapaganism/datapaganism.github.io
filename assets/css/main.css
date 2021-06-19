@@ -111,6 +111,7 @@ body
         justify-content: center;
         align-content: center;
         text-transform: lowercase;
+        font-style: italic;
     }
 
     nav .nav__link:hover
@@ -128,6 +129,12 @@ body
         text-align: center;
         color: rgba(var(--navbar), 1);
         text-decoration: none;
+
+        font-style: italic;
+        letter-spacing: 0.6em;
+        font-weight: bold;
+        font-size: 37px;
+
     }
 
 
