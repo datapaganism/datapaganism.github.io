@@ -133,7 +133,7 @@ body
         font-style: italic;
         letter-spacing: 0.6em;
         font-weight: bold;
-        font-size: 37px;
+        font-size: 30px;
 
     }
 
@@ -243,6 +243,9 @@ body
         color: rgba(var(--title),1);
         text-decoration: none;
         /* white-space: nowrap; */
+            font-style: italic;
+            /* letter-spacing: -0.014em; */
+            font-weight: 700;
     }
 
     .pageTitle__subheading
@@ -300,7 +303,7 @@ body
         .navbar__homeLink
         {
             justify-content: left; /* change this */
-            font-size: 64px;
+            font-size: 30px;
             grid-area: 1 / 2 / 2 / 3;
         }
 
