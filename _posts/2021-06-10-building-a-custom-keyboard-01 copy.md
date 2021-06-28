@@ -7,6 +7,14 @@ layout: post
 author: datapagan
 ---
 
+# Important resources
+
+These are the tools you can use to do all the grunt work for designing your layout.
+
+1. [layout editor](http://www.keyboard-layout-editor.com)
+2. [plate generator](http://builder.swillkb.com/)
+3. [wiring / firmware generator](https://kbfirmware.com/)
+
 
 # The preamble
 
