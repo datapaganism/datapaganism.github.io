@@ -1,7 +1,7 @@
 ---
 title: home | afk
 header: welcome to here
-description: Website of Alen Karnil
+description: Website of Alen
 permalink: /
 layout: default
 ---
