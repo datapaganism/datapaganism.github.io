@@ -3,7 +3,7 @@ plugins:
   - jekyll-sitemap
 
 #SEO Stuff
-author: Alen Karnil
+author: Alen
 description: This is my website i guess
 lang: en
 locale: en_GB
