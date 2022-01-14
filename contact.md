@@ -2,7 +2,7 @@
 layout: default
 title: contact me | afk
 header: contact me
-description: contact details of Alen Karnil
+description: contact details of Alen
 permalink: /contact/
 
 ---
