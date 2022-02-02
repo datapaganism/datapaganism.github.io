@@ -1,5 +1,5 @@
 ---
-title: How to diff & patch STL models.md
+title: How to diff & patch STL models
 header: How to diff & patch STL models
 description: A quick guide on how to patch STL models.
 permalink: /blog/guides/stl-diff-patch
