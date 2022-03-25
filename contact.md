@@ -9,4 +9,4 @@ permalink: /contact/
 
 If you want to contact me then below are my details.
 
-email :
+email : datapaganism@priest.com
