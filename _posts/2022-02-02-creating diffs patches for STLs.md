@@ -20,15 +20,15 @@ Using the Linux shell (Windows users can install a distro through WSL2), we can 
 
 First let's create the patch, in your distro's shell (I used Ubuntu) type in 
 ```
-diff -u <(xxd <originalFile>) <(xxd <updatedFile>) > <originalFile>.patch
+diff -u <(xxd "originalFile") <(xxd "updatedFile") > "originalFile.patch"
 ```
 Where *\<originalFile\>* and *\<updatedFile\>* represent the path to the respective files
 This will create the patch, this is what I would include alongside with my models when I'd sell them.
 
 To patch the original file with the diff use
 ```
-xxd <originalFile> > <originalFile>.hex && patch <originalFile>.hex < <patchFile>  && xxd -r <originalFile>.hex > <originalFile>
-rm <originalFile>.hex
+xxd "originalFile" > "originalFile.hex" && patch "originalFile.hex" < "patchFile"  && xxd -r "originalFile.hex" > "originalFile"
+rm "originalFile.hex"
 ```
 Where *\<originalFile\>* and *\<patchFile\>* represent the path to the respective files.
 This will temporarily copy and convert the STL to a hex file and then patch it using the provided patch, and then convert the hex back to STL and finally delete the temporary file.
